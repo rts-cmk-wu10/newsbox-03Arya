@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newsbox Archive</title>
+	<link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+                <li class=""><a href="index.html"><i class="fa-solid fa-angle-left"></i></a></li>
+				<li><a class="homeButton" href="archive.html">Archive</a></li>
+				<li><a href="settings.html"><i class="fa-solid fa-gear"></i></a></li>
+			</ul>
+		</nav>
+		<form class="searchForm" action="">
+			<label for="">
+				<input class="searchInput" name="search" type="text" placeholder="Search news">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</label>
+		</form>
+	</header>
+
+<!-- SECTION FOR ARTICLE WITH FETCH HEALTH API-->
+<section id="healthArticle" class="newsContainer">
+	<div class="newsNav">
+		<div class="newsNavDiv">
+			<i class="fa-solid fa-diamond"></i>
+			<p class="newsTitle">HEALTH</p>
+		</div>
+		<p class="newsDropdownArrow"><i id="healthDropdown" class="fa-solid fa-chevron-right"></i></p>
+	</div>
+	<div class="ArticleHealth hidden">
+		<p class="ArticleTextHealth"></p>
+	</div>
+</section>
+
+<!-- SECTION FOR ARTICLE WITH FETCH TRAVEL API-->
+<section id="travelArticle" class="newsContainer">
+	<div class="newsNav">
+		<div class="newsNavDiv">
+			<i class="fa-solid fa-diamond"></i>
+			<p class="newsTitle">TRAVEL</p>
+		</div>
+		<p class="newsDropdownArrow"><i id="travelDropdown" class="fa-solid fa-chevron-right"></i></p>
+	</div>
+	<div class="ArticleTravel hidden">
+		<p class="ArticleTextTravel"></p>
+	</div>
+</section>
+
+<!-- SECTION FOR ARTICLE WITH FETCH SPORT API-->
+<section id="sportArticle" class="newsContainer">
+	<div class="newsNav">
+		<div class="newsNavDiv">
+			<i class="fa-solid fa-diamond"></i>
+			<p class="newsTitle">SPORT</p>
+		</div>
+		<p class="newsDropdownArrow"><i id="sportDropdown" class="fa-solid fa-chevron-right"></i></p>
+	</div>
+	<div class="ArticleSport hidden">
+		<p class="ArticleTextSport"></p>
+	</div>
+</section>
+
+<!-- SECTION FOR ARTICLE WITH FETCH EUROPE API-->
+<section id="europeArticle" class="newsContainer">
+	<div class="newsNav">
+		<div class="newsNavDiv">
+			<i class="fa-solid fa-diamond"></i>
+			<p class="newsTitle">EUROPE</p>
+		</div>
+		<p class="newsDropdownArrow"><i id="europeDropdown" class="fa-solid fa-chevron-right"></i></p>
+	</div>
+	<div class="ArticleEurope hidden">
+		<p class="ArticleTextEurope"></p>
+	</div>
+</section>
+
+<!-- SECTION FOR ARTICLE WITH FETCH BUSINESS API-->
+<section id="businessArticle" class="newsContainer">
+	<div class="newsNav">
+		<div class="newsNavDiv">
+			<i class="fa-solid fa-diamond"></i>
+			<p class="newsTitle">BUSINESS</p>
+		</div>
+		<p class="newsDropdownArrow"><i id="businessDropdown" class="fa-solid fa-chevron-right"></i></p>
+	</div>
+	<div class="ArticleBusiness hidden">
+		<p class="ArticleTextBusiness"></p>
+	</div>
+</section>
+
+	<script src="./main.js" defer></script>
+</body>
+
+</html>

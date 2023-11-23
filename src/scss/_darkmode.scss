@@ -1,0 +1,112 @@
+$Drab: #324755;
+$Fossil: #c8d1d3;
+$Ice: #f0f3f4;
+$Onyx: #1b1c20;
+$Sage: #87bcbf;
+$Sand: #b9b0a2;
+$Slate: #6e8ca0;
+
+@mixin transition($var) {
+    transition: $var 800ms ease;
+}
+
+body {
+    max-width: 450px;
+    margin: auto;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    @include transition(background-color);
+    @include transition(color);    
+    @include transition(border-color);
+}
+
+header {
+    background-color: var(--color-bg);   
+    @include transition(background-color);
+}
+
+html {
+    background-color: white;
+    @include transition(background-color);
+}
+
+main {
+    background-color: var(--color-mg);
+    @include transition(background-color);
+}
+
+.settingsFilters {
+    background-color: var(--color-sFilter);
+    @include transition(background-color);
+    border-color: var(--color-sFilterBorder);
+    @include transition(border-color);
+}
+
+a {
+    color: var(--color-linkColor);
+    @include transition(background-color);
+}
+
+button {
+    background-color: var(--color-buttonColor);
+    color: var(--color-fg);
+    @include transition(background-color);
+}
+
+.switch__checkbox:checked + .switch {
+    background-color: var(--color-bgSwitch);
+    @include transition(background-color);
+}
+
+.newsDropdownArrow svg {
+    color: var(--color-dropDownArrow);
+    @include transition(background-color);
+}
+
+.newsNav {
+    background-color: var(--color-newsContainer);
+    @include transition(background-color);
+}
+
+.newsNavDiv svg {
+    border-color: var(--color-newsLogoBorder);
+    color: var(--color-newsLogo);
+    @include transition(background-color);
+}
+
+.articleText {
+    color: var(--color-articleText);
+    @include transition(background-color);
+}
+
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #1b1c20;
+    --color-mg: #f0f3f4;
+    --color-sFilter: #fff;
+    --color-linkColor: #1b1c20;
+    --color-buttonColor: #f0f3f4;
+    --color-sFilterBorder: #fff;
+    --color-bgSwitch: #87bcbf;
+    --color-dropDownArrow: #1b1c20;
+    --color-newsContainer: #fff;
+    --color-newsLogoBorder: #000;
+    --color-newsLogo: #ffa500;
+    --color-articleText:#6E8CA0;
+}
+
+[data-theme="dark"] {
+    --color-bg: #324755;
+    --color-fg: #fff;
+    --color-mg: #324755;
+    --color-sFilter: #324755;
+    --color-linkColor: #000;
+    --color-buttonColor: #324755;
+    --color-sFilterBorder: #000;
+    --color-bgSwitch: #d95454;
+    --color-dropDownArrow: #1b1c20;
+    --color-newsContainer: #324755;
+    --color-newsLogoBorder: #6e8ca0;
+    --color-newsLogo: #87bcbf;
+    --color-articleText: #fff;
+}
